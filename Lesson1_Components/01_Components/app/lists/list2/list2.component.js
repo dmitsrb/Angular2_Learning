@@ -7,26 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
-var index_1 = require("./lists/index");
-var AppModule = (function () {
-    function AppModule() {
+var List2Component = (function () {
+    function List2Component() {
     }
-    return AppModule;
+    return List2Component;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            index_1.ListsModule,
-            router_1.RouterModule.forRoot(index_1.routs)
-        ],
-        declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+List2Component = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "list-2",
+        templateUrl: "list2.component.html",
+        styleUrls: ["list2.component.css"]
     })
-], AppModule);
-exports.AppModule = AppModule;
-;
-//# sourceMappingURL=app.module.js.map
+], List2Component);
+exports.List2Component = List2Component;
+//# sourceMappingURL=list2.component.js.map
